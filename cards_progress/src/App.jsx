@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import Card from "./components/Card.jsx";
+/* import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -28,6 +29,17 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+    </>
+  )
+} */
+
+function App() {
+  return(
+    <>
+      <h1>Michelangelo</h1>
+      <Card />
+      <Card />
+      <Card />
     </>
   )
 }
