@@ -1,0 +1,74 @@
+REACT: libreria
+ANGULAR: framework
+
+Axios fratello di FetchAP sono basati sulle promise;
+In angular ci sono sistemi simili, con nomi diversi.
+
+react: visto ultima lezione->abbiamo visto come creare i primi pezzettini che 
+producono USER INTERFACE; usiamo JS esteso, ovvero JSX; React e JS vengono messi
+assieme dall'ambiente di build, noi abbiamo visto VITE; Vite fa ottimizzazioni,
+compressioni, e altre operazioni complicate e complesse; Se usiamo REACT, ci serve
+per forza VITE; ci sono altre alternative, ormai sconsigliate: "create react app";
+
+linguaggio SAS: ha lo scopo di produrre CSS (Bootstrap è fatto con quello)
+TAILWIND/BOOTSTRAP: leggermente diversi (nel dietro le quinte) ma comparabili;
+
+FLOWBITE/REACT: simili ma diversi dietro le quinte;
+
+CUORE PULSANTE DI REACT: LO STATO;
+
+Componente funzionale: un file jsx con una funzione che ha lo scopo di buttare fuori 
+un pezzo di interfaccia, un pezzo di futuro HTML; 
+cambio di paradigma: descrivere con react come vorremmo una parte di frontend, ma non 
+abbiamo mai usato "create element", abbiamo solo "predisposto" pseudo-html, poi dietro 
+le quinte saranno REACT/VITE  a farlo;
+
+quando si crea un comp. funzionale il cui unico scopo è produrre interfaccia,
+DEVE ASSOLUTAMENTE AVERE UN NODO RADICE, tipo cosi:
+
+function App() {
+  return(
+    <div>
+      <h1>Michelangelo</h1>
+      <Card />
+      <Card />
+      <Card />
+    </div>
+  )
+}
+
+togliendo il DIV, si avrebbero 4 nodi SIBLING, e non va bene; ogni componente deve
+generare un albero di DOM; per ogni componente funzionale, va creato un file .jsx
+a parte (come modus operandi migliore); LORENZO MICHELON
+
+legare il file CSS al suo componente JSX: usare "import 'percorso_file'", poi assegnare
+classi e selettori dentro i tag del componente JSX; 
+
+Attenzione che le modifiche del CSS diventano poi globali: se ho altri componenti 
+che usano quella classe,si generano conflitti; attenzione quindi alla gerarchia
+dei selettori css, da tenere conto quindi di ordine cronologico e specificità;
+
+MODULI CSS: nome_file.module.css
+Il sistema di building VITE li supporta; quando si imprtano i moduli css, si creano
+oggetti JS con proprietà le classi definite nel css;
+
+utilizzando l'approccio dei "moduli css" si delega la gestione delle conflittualità
+al sistema di building;
+
+concetti base di react: PROPS + STATE
+
+PROGETTO REACT:
+1: installare vite: 
+    npm create vite@latest <nome_cartella_progetto> -- --template react
+    npm create vite@latest turorialstop -- --template react
+2: usare rolldown-->NO
+3: install with...--->YES se vuoi automatizzare, altrimenti NO e passi ai punti dopo
+4a: cd 'nomeprogetto'
+4b: npm install (oppure. 'npm i')
+4c: npm run dev
+5a: ctrl+C per stoppare server
+5: installa react-boostrap: 
+    npm install react-bootstrap bootstrap
+
+PROSSIMA VOLTA: inizieremo a costruire i componenti del progetto;
+per casa: esercizi del pdf2

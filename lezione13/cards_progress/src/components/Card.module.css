@@ -1,0 +1,15 @@
+.cardSection {
+    border-radius: 25px;
+    border: 1px solid #333;
+    width: 50%;
+}
+
+.avatar {
+    width: 100%;
+    height: auto;
+}
+
+.testP {
+    border-radius: 25px;
+    border: 2px solid red;
+}
