@@ -1,0 +1,15 @@
+MATTINA:
+sviluppo cards della seconda sezione dle progetto;
+
+POMERIGGIO:
+comunicazione tra componenti;
+finestra modale: se aperta, va esplicitata la chiusura premendo un bottone di chiusura;
+
+- stato componente: insieme di variabili speciali che una volta alterati vanno in una sorta di coda
+  gestita da react, che poi si occuperà di predisporle in task per ri-renderizzare i componenti che dipendono
+  da queste variabili speciali;
+- aspetto fondamentale: i componenti fratelli non parlano tra loro, possono chiedere al primo PARENT in comunicazionedi fare da tramite;
+- 'lif the state up': 'elevazione dello stato';
+
+chiamata telefono Francesconi: 16:30 - 16:33
+
