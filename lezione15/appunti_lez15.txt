@@ -1,0 +1,27 @@
+- nell'ultima lezione siamo arrivati a dover gestire la chiusura del modale, che attualmente non funziona.
+- con REACT non si lavora più con il DOM e la sua manipolazione.
+- è stato visto l'importantissimo concetto di STATO dei componenti;
+- per far comunicare i cambiamenti di stato tra due componenti fratelli, è necessario elevare 
+    lo stato al parent in comune più vicino ai due;
+- è stato introdotto l'altra volta il framework react-bootstrap, che fornisce componenti già pronti da 
+    utilizzare e personalizzare
+
+CHIUSURA DEL MODALE
+- per gestire la chiusura del modale: definiamo nel figlio una funzione 'handleClose', la quale
+    poi deve chiamare una funzione 'onHandleClick' che è definita nel padre e inserita nelle props del figlio;
+
+IMPLEMENTAZIONE TERZA SEZIONE
+- 2 righe;
+- la prima con 1 colonna (barra di avanzamento delle notizie)
+- la seconda con due colonne
+- la barra è fornita da react-bootstrap: 'readingBar', noi implementiamo un componente involucro per gestire
+    queasto componente predisposto
+- importante definire e dichiarare dati al di fuori della funzione del componente, in modo da non dover
+    ricreare ogni volta la variabile che le contiene ad ogni renderizzazione del componente;
+
+IMPLEMENTAZIONE PRIMA SEZIONE (form per inviare commenti ed emoticon sui tutorials)
+- componenti react da fare: FormTutorial, Emoticon, Comments, EmoticonRater
+- form diviso in 2 parti: una con select, una con un campo input per digitare i commenti
+- componente Comments: presente un operatore di cortocircuito (in modo da poterlo studiare)
+- componente EmoticonsRater: insieme di funzioni interne che poi vengono chiamate nella funzione principale esportata
+     
